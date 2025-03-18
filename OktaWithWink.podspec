@@ -5,13 +5,21 @@ Pod::Spec.new do |s|
   s.description  = 'A custom wrapper around Okta SDK'
   s.homepage     = 'https://github.com/swatiappzlogic/OktaCustomFramework'
   s.license      = 'MIT'
-  s.author       = { 'Swati' => 'swati.sharma@appzlogic.com' }
+  s.author       = { 'Swati' => 'your.email@example.com' }
   s.platform     = :ios, '16.0'
   s.swift_version = '5.0'
 
-  # Hosted ZIP file (Make sure this URL is correct)
+  # Hosted ZIP file (Ensure correct URL)
   s.source = { :http => 'https://github.com/swatiappzlogic/OktaCustomFramework/releases/download/1.0.0/OktaWithWink.xcframework.zip' }
 
-  # Tell CocoaPods this ZIP contains an XCFramework
+  # Vendored XCFramework (Make sure the ZIP contains this)
   s.vendored_frameworks = 'OktaWithWink.xcframework'
+
+  # Dependencies - These MUST be included for linking
+  s.dependency 'Alamofire', '~> 5.0'
+  s.dependency 'NVActivityIndicatorView'
+  s.dependency 'ADCountryPicker'
+  s.dependency 'DatePicker', '~> 1.3.0'
+  s.dependency 'FlagPhoneNumber'
+  s.dependency 'PhoneNumberKit', '~> 3.7'
 end
