@@ -11,11 +11,10 @@ s.swift_version = '5.0'
 s.ios.deployment_target = '16.0'
 
 # Hosted ZIP file (Ensure correct URL)
-s.source = { :git => 'https://github.com/swatiappzlogic/OktaCustomFramework.git', :tag => '1.0.0' }
-
-
+s.source = { :http => 'https://github.com/swatiappzlogic/OktaCustomFramework/releases/download/1.0.0/OktaWithWink.xcframework.zip' }
 s.vendored_frameworks = 'OktaWithWink.xcframework'
 s.preserve_paths = 'OktaWithWink.xcframework'
+
 
 s.dependency 'Alamofire', '~> 5.0'
 s.dependency 'NVActivityIndicatorView'
