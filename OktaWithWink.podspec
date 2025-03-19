@@ -24,4 +24,6 @@ s.dependency 'FlagPhoneNumber'
 s.dependency 'PhoneNumberKit', '~> 3.7'
 s.dependency 'OktaOidc', '~> 3.10.1'
 
+s.static_framework = true
+
 end
