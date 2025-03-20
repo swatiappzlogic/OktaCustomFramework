@@ -15,14 +15,4 @@ s.source = { :http => 'https://github.com/swatiappzlogic/OktaCustomFramework/rel
 s.vendored_frameworks = 'OktaWithWink.xcframework'
 s.preserve_paths = 'OktaWithWink.xcframework'
 
-
-s.dependency 'Alamofire', '~> 5.0'
-s.dependency 'NVActivityIndicatorView'
-s.dependency 'ADCountryPicker'
-s.dependency 'DatePicker', '~> 1.3.0'
-s.dependency 'FlagPhoneNumber'
-s.dependency 'PhoneNumberKit', '~> 3.7'
-s.dependency 'OktaOidc', '~> 3.10.1'
-
-
 end
